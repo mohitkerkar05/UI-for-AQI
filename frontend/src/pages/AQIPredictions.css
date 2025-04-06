@@ -1,0 +1,115 @@
+Wrapper and container layout
+.aqi-wrapper {
+    background: linear-gradient(to bottom right, #ebf8ff, #e6fffa);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  
+  .aqi-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Dropdown */
+  .city-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .city-selector select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  /* Info and Error */
+  .info-text {
+    text-align: center;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .error-text {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Forecast Title */
+  .forecast-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* AQI Cards Grid */
+  .aqi-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  
+  /* AQI Card */
+  .aqi-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .aqi-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* AQI Text */
+  .aqi-day {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .aqi-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 6px;
+  }
+  
+  /* Category Colors */
+  .aqi-category {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .aqi-category.Good {
+    color: #2ecc71;
+  }
+  .aqi-category.Moderate {
+    color: #f1c40f;
+  }
+  .aqi-category.Unhealthy-for-Sensitive-Groups {
+    color: #e67e22;
+  }
+  .aqi-category.Unhealthy {
+    color: #e74c3c;
+  }
+  .aqi-category.Very-Unhealthy {
+    color: #c0392b;
+  }
+  .aqi-category.Hazardous {
+    color: #8e44ad;
+  }
+  
