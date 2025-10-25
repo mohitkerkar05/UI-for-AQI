@@ -8,7 +8,22 @@ uvicorn server:app --host 0.0.0.0 --port 8000 --reload
 Backend successfully run kar raha aur predictions generate ho rahe hai ye check karne ke liye,next ye web address pe visit karna , agar predictions dikh rahe hai toh backend chal rha hai
 http://127.0.0.1:8000/predict?city=Mumbai
 
+
 Frontend ke liye : npm run dev
 Tailwind use karne ke liye configure kiya hai,work kar rha hai kya dekh lo
 Fronend ka main code Trial.jsx file me hai
+
+
+
+GO to frontend folder :
+1. cd frontend
+2. Run npm install / if already installed then npm start
+
+GO to backend folder in another terminal:
+1. cd backend
+2. Run uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+
+GO to backend folder again in another terminal:
+1. cd backend
+2. Run python app.py
 
